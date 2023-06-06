@@ -1,9 +1,16 @@
+# k8s related
 alias k=kubectl
 
+source <(kubectl completion zsh)  # set up autocomplete in zsh into the current shell
+echo '[[ $commands[kubectl] ]] && source <(kubectl completion zsh)' >> ~/.zshrc # add autocomplete permanently to your zsh shell
+
+# Other
 arm() {
   arch -x86_64 $@
 }
 
+
+# SSH related
 _ssh()
 {
     local cur prev opts
