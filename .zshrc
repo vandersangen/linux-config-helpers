@@ -1,3 +1,5 @@
+alias k=kubectl
+
 arm() {
   arch -x86_64 $@
 }
